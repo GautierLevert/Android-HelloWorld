@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bonjour le monde</string>
+    <string name="main_say_hello">Dire bonjour !</string>
+    <string name="main_hello_world">Bonjour le monde</string>
+    <string name="main_name_hint">Entrez votre nom</string>
+</resources>

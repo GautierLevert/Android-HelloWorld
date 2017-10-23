@@ -17,16 +17,16 @@
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="Button" />
+        android:text="@string/main_say_hello" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" />
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint="@string/main_name_hint"
+        android:inputType="textPersonName" />
 </RelativeLayout>
