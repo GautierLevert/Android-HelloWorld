@@ -22,7 +22,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         // never forget to call super method
         super.onCreate(savedInstanceState);
-        
+
         // bind the Activity and the layout
         setContentView(R.layout.activity_main);
 
@@ -44,10 +44,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         // get entered name
         String name = editText.getText().toString();
+
         // create Intent for the second Activity
         Intent intent = new Intent(this, ViewActivity.class);
+
         // add the name as Extra
         intent.putExtra(ViewActivity.EXTRA_NAME, name);
+
         // ask system to launch second Activity
         startActivity(intent);
     }
