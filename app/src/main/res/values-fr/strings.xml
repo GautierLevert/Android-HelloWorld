@@ -4,4 +4,5 @@
     <string name="main_say_hello">Dire bonjour !</string>
     <string name="main_hello_world">Bonjour le monde</string>
     <string name="main_name_hint">Entrez votre nom</string>
+    <string name="view_greetings">Bonjour %s</string>
 </resources>

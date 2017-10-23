@@ -16,10 +16,19 @@ public class ViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
 
-        textView = (TextView) findViewById(R.id.textView);
+        bindViews();
 
+        // retrive the intent that started this activity.
         Intent intent = getIntent();
+
+        // retrieve extra value from the intent.
         String name = intent.getStringExtra(EXTRA_NAME);
-        textView.setText("Hello " + name);
+
+        // define the text content in the text with formatted string
+        textView.setText(getString(R.string.view_greetings, name));
+    }
+
+    private void bindViews() {
+        textView = findViewById(R.id.textView);
     }
 }
